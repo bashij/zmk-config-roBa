@@ -78,7 +78,7 @@
 
         FUNCTION {
             bindings = <
-&trans          &kp LANGUAGE_2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                            &kp F1         &kp RC(A)       &kp UP_ARROW    &kp RC(K)        &trans
+&trans          &kp LANGUAGE_2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                            &none          &kp RC(A)       &kp UP_ARROW    &kp RC(K)        &trans
 &kp LANGUAGE_4  &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans  &kp DEL        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &kp LEFT_SHIFT  &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0      &trans  &kp BACKSPACE  &kp PLUS        &kp KP_MINUS    &kp ASTERISK     &mt RIGHT_SHIFT SLASH
 &trans          &trans          &trans        &trans        &trans        &trans            &trans  &trans                                                          &trans
@@ -87,19 +87,19 @@
 
         NUM {
             bindings = <
-&none           &kp F12  &kp F7  &kp F8  &kp F9                      &kp CARET                 &kp AMPERSAND     &kp TILDE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LEFT_SHIFT  &kp F11  &kp F4  &kp F5  &kp F6  &trans      &none   &kp LS(LEFT_PARENTHESIS)  &kp LS(NUMBER_0)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PERCENT
-&kp LEFT_SHIFT  &kp F10  &kp F1  &kp F2  &kp F3  &trans      &trans  &kp LESS_THAN             &kp GREATER_THAN  &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp BACKSLASH
-&trans          &trans   &trans  &trans  &trans  &trans      &trans  &trans                                                                              &kp PIPE
+&none           &kp F12  &kp F7  &kp F8  &kp F9                      &none   &kp MINUS             &kp EQUAL              &kp BACKSLASH     &kp GRAVE
+&kp LEFT_SHIFT  &kp F11  &kp F4  &kp F5  &kp F6  &trans      &trans  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp F10  &kp F1  &kp F2  &kp F3  &trans      &trans  &none   &kp LESS_THAN         &kp GREATER_THAN       &kp SEMICOLON     &kp SINGLE_QUOTE
+&trans          &trans   &trans  &trans  &trans  &trans      &trans  &trans                                                                 &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&none   &none           &kp UP_ARROW    &none            &trans                      &none                      &kp RC(RA(E))           &kp RC(RA(ENTER))       &kp RA(RC(T))            &none
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans      &trans  &kp RG(RS(LEFT_BRACKET))   &kp RC(RA(LEFT_ARROW))  &kp RA(RC(UP_ARROW))    &kp RA(RC(RIGHT_ARROW))  &none
+&none   &none           &trans          &none            &trans  &trans      &trans  &kp RS(RG(RIGHT_BRACKET))  &kp RC(RA(D))           &kp RA(RC(DOWN_ARROW))  &kp RA(RC(G))            &none
+&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
