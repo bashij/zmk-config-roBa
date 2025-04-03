@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&trans          &kp LANGUAGE_2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                            &none          &kp RC(A)       &kp UP_ARROW    &kp RC(K)        &trans
-&kp LANGUAGE_1  &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans  &kp DEL        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&kp LEFT_SHIFT  &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0      &trans  &kp BACKSPACE  &kp PLUS        &kp KP_MINUS    &kp ASTERISK     &mt RIGHT_SHIFT SLASH
-&trans          &trans          &trans        &trans        &trans        &trans            &trans  &trans                                                          &trans
+&trans          &kp LANGUAGE_2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                      &none          &kp RC(A)       &kp UP_ARROW    &kp RC(K)        &trans
+&kp LANGUAGE_1  &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans      &trans  &kp DEL        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&kp LEFT_SHIFT  &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &trans  &kp BACKSPACE  &kp PLUS        &kp KP_MINUS    &kp ASTERISK     &mt RIGHT_SHIFT SLASH
+&trans          &trans          &kp NUMBER_0  &trans        &trans        &trans      &trans  &trans                                                          &trans
             >;
         };
 
@@ -96,10 +96,10 @@
 
         ARROW {
             bindings = <
-&none   &none           &kp UP_ARROW    &none            &trans                      &none                      &kp RC(RA(E))           &kp RC(RA(ENTER))       &kp RA(RC(T))            &none
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans      &trans  &kp RG(RS(LEFT_BRACKET))   &kp RC(RA(LEFT_ARROW))  &kp RA(RC(UP_ARROW))    &kp RA(RC(RIGHT_ARROW))  &none
-&none   &none           &trans          &none            &trans  &trans      &trans  &kp RS(RG(RIGHT_BRACKET))  &kp RC(RA(D))           &kp RA(RC(DOWN_ARROW))  &kp RA(RC(G))            &none
-&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                                              &trans
+&none   &none           &kp UP_ARROW    &none            &trans                                          &none                        &kp RC(RA(E))           &kp RC(RA(ENTER))       &kp RA(RC(T))            &none
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans      &trans                      &kp RG(RS(LEFT_BRACKET))     &kp RC(RA(LEFT_ARROW))  &kp RA(RC(UP_ARROW))    &kp RA(RC(RIGHT_ARROW))  &none
+&none   &none           &trans          &none            &trans  &trans      &trans                      &kp RS(RG(RIGHT_BRACKET))    &kp RC(RA(D))           &kp RA(RC(DOWN_ARROW))  &kp RA(RC(G))            &none
+&trans  &trans          &trans          &trans           &trans  &trans      &kp RA(RG(RC(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT_ARROW)))                                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
