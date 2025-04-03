@@ -79,7 +79,7 @@
         FUNCTION {
             bindings = <
 &trans          &kp LANGUAGE_2  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                            &none          &kp RC(A)       &kp UP_ARROW    &kp RC(K)        &trans
-&kp LANGUAGE_4  &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans  &kp DEL        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&kp LANGUAGE_1  &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans  &kp DEL        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &kp LEFT_SHIFT  &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0      &trans  &kp BACKSPACE  &kp PLUS        &kp KP_MINUS    &kp ASTERISK     &mt RIGHT_SHIFT SLASH
 &trans          &trans          &trans        &trans        &trans        &trans            &trans  &trans                                                          &trans
             >;
