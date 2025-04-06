@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_POINTING_SCRL_VAL 100
-
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
@@ -62,10 +61,12 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -78,7 +79,7 @@
 &kp Q             &kp W  &kp E      &kp R    &kp T                                                   &kp Y              &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S  &lt 5 D    &lt 2 F  &kp G             &kp LS(LG(S))      &mo 5              &kp H              &kp J  &lt 5 K    &kp L    &lt 1 MINUS
 &mt LEFT_SHIFT Z  &kp X  &kp C      &kp V    &kp B             &mo 4              &kp ENTER          &kp N              &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC           &none  &lt 2 TAB  &mo 1    &kp LEFT_COMMAND  &kp SPACE          &kp RIGHT_CONTROL  &kp RIGHT_COMMAND                             &kp RIGHT_ALT
+&kp ESC           &mo 6  &lt 2 TAB  &mo 1    &kp LEFT_COMMAND  &kp SPACE          &kp RIGHT_CONTROL  &kp RIGHT_COMMAND                             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&scroll_up_down>;
