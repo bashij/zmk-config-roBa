@@ -52,7 +52,7 @@
             key-positions = <31 30>;
         };
 
-        middle_click {
+        right_click {
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
