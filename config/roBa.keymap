@@ -92,9 +92,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W  &kp E      &kp R    &kp T                                                   &kp Y              &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S  &lt 5 D    &lt 2 F  &kp G             &kp LS(LG(S))      &mo 5              &kp H              &kp J  &lt 5 K    &kp L    &lt 1 MINUS
+&lt 4 A           &kp S  &lt 5 D    &lt 2 F  &kp G             &kp LS(LG(S))      &kp RIGHT_ALT      &kp H              &kp J  &lt 5 K    &kp L    &lt 1 MINUS
 &mt LEFT_SHIFT Z  &kp X  &kp C      &kp V    &kp B             &mo 4              &kp ENTER          &kp N              &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp ESC           &mo 6  &lt 2 TAB  &mo 1    &kp LEFT_COMMAND  &kp SPACE          &kp RIGHT_CONTROL  &kp RIGHT_COMMAND                             &kp RIGHT_ALT
+&kp ESC           &mo 6  &lt 2 TAB  &mo 1    &kp LEFT_COMMAND  &kp SPACE          &kp RIGHT_CONTROL  &kp RIGHT_COMMAND                             &mo 4
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -123,7 +123,7 @@
 &none   &none           &kp UP_ARROW    &none            &trans                                          &none                        &kp RC(RA(E))           &kp RC(RA(ENTER))       &kp RA(RC(T))            &none
 &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans      &trans                      &kp RG(RS(LEFT_BRACKET))     &kp RC(RA(LEFT_ARROW))  &kp RA(RC(UP_ARROW))    &kp RA(RC(RIGHT_ARROW))  &none
 &none   &none           &trans          &none            &trans  &trans      &trans                      &kp RS(RG(RIGHT_BRACKET))    &kp RC(RA(D))           &kp RA(RC(DOWN_ARROW))  &kp RA(RC(G))            &none
-&trans  &trans          &trans          &trans           &trans  &trans      &kp RA(RG(RC(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT_ARROW)))                                                                           &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &kp RC(RA(RG(LEFT_ARROW)))  &kp RC(RA(RG(RIGHT_ARROW)))                                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -131,10 +131,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans       &kp RG(TAB)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1     &mkp MB3     &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RC(TAB)  &trans       &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
             >;
         };
 
